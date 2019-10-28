@@ -11,10 +11,12 @@ const WikiColors = () => {
 
     return (
         <div className="section">
-            <h2>Colors - fetch json from github</h2>
-            <p>
-                This component gets colors via fetch to github. The technique is really far more simple than the othre two, but its propably easier to learn the structure by having them at hand first.</p>
-            <p><a href="https://github.com/dariusk/corpora/blob/master/data/colors/crayola.json">The colors.json file can be found in this excellent repo</a></p>
+            <div className="intro">
+                <h2>JSON fetched from github</h2>
+                <p>
+                    This component gets colors via fetch to github. The technique is really far more simple than the othre two, but its propably easier to learn the structure by having them at hand first.</p>
+                <p><a href="https://github.com/dariusk/corpora/blob/master/data/colors/crayola.json">The colors.json file can be found in this excellent repo</a></p>
+            </div>
             <div className="colors">
             {
                 colors.map(

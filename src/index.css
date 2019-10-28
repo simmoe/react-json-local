@@ -7,13 +7,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width:60vw;
   margin:auto;
+  font-size:14px;
 }
 
+h1, h2, h3, p, div, a{
+  font-weight:300;
+}
+
+.intro{
+  min-height:20vh;
+  max-width:40vw;
+}
+.colors{
+  border-top:1px solid green;
+  margin-top:5vh;
+  padding-top:2vh;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+nav {
+  position:fixed;
+  top:0;
+  background-color:white;
+  display:grid;
+  width:60vw;
+  grid-auto-flow: column;
+  justify-content:space-between;
+}
+
+nav a{
+  padding:1rem 0 1rem 0;
+  text-decoration: none;
+}
+nav a:nth-child(1){
+  color: #0D98BA;
+}
+nav a:nth-child(2){
+  color: #FF1DCE;
+}
+nav a:nth-child(3){
+  color:#002FA7;
+}
+main{
+  padding-top:10vh;  
+}
 .section {
   min-height:100vh;
 }

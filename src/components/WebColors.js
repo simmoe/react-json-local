@@ -4,12 +4,14 @@ import Color from './Color'
 const WebColors = (props) => {
     return(
         <div className="section">
-            <h2>Web Safe Colors - json object directly in component</h2>
-            <p>
-                {webColors.description}. This example is even simpler - the colors json object is just createde directly inside the component.
-            </p>
-            <p><a href="https://github.com/dariusk/corpora/blob/master/data/colors/crayola.json">The colors.json file cvan be found in this excellent repo</a></p>
-            <div className="section colors">
+            <div className="intro">
+                <h2>JSON const in component</h2>
+                <p>
+                    {webColors.description}. This example is even simpler - the colors json object is just createde directly inside the component.
+                </p>
+                <p><a href="https://github.com/dariusk/corpora/blob/master/data/colors/crayola.json">The colors.json file cvan be found in this excellent repo</a></p>
+            </div>
+            <div className="colors">
             {
                 webColors.colors.map(
                     (col, i) => <Color key={i} hex={col.hex} col={col.color} />    

@@ -5,7 +5,7 @@ const Color = (props) => {
         backgroundColor: props.hex
     }
     return(
-        <div style={colorStyle}>{props.col}</div>
+        <div style={colorStyle}>{props.col}<br/>{props.hex}</div>
     )
 }
 export default Color 
