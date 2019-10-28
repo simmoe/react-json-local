@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Colors from './components/Colors'
+import WebColors from './components/WebColors'
+import WikiColors from './components/WikiColors'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+      <div> 
+        <h1>Data!</h1>
+        <p>These are different examles of using a local or remote json file to parse a react page.</p>
+        <Colors />
+        <WebColors />
+        <WikiColors />
+      </div>
+    )
+}   
 
 export default App;
