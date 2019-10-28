@@ -8,7 +8,7 @@ const Colors = (props) => {
             <div className="intro">
                 <h2>Local json in js file</h2>
                 <p>
-                    {myColors.description}. The Technique here is to create a separate file with the json object (including an object array with all the crayon colors). Define the json as a const and export it in the end of the file. After that you can import and parse the object in your component.
+                    Here the JSON object is put into a separate file and imported in the component. 
                 </p>
                 <p><a href="https://github.com/dariusk/corpora/blob/master/data/colors/crayola.json">The colors.json file cvan be found in this excellent repo</a></p>
             </div>

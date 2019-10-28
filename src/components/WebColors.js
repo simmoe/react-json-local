@@ -7,7 +7,7 @@ const WebColors = (props) => {
             <div className="intro">
                 <h2>JSON const in component</h2>
                 <p>
-                    {webColors.description}. This example is even simpler - the colors json object is just createde directly inside the component.
+                    This is propably the simplest way to include a JSON object in a REACT component. The colors json object is declared directly as a constant. The code looks messy however.
                 </p>
                 <p><a href="https://github.com/dariusk/corpora/blob/master/data/colors/crayola.json">The colors.json file cvan be found in this excellent repo</a></p>
             </div>
