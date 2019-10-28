@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##Watch demo
+
+<a href="https://simmoe.github.io/react-json-local/">Demo here</a>
+
+
 ## Available Scripts
 
 In the project directory, you can run:
