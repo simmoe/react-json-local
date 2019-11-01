@@ -1,7 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Color from './Color'
 
 const WebColors = (props) => {
+
+    const [picked, setPicked] = useState([])
+
+
+    const pick = (col) => {
+        setPicked([...picked, col])
+    }
+
+    const remove = (col) => {
+        setPicked( picked.filter( pick => pick.hex !== col.hex ) )
+    }
+
     return(
         <div className="section">
             <div className="intro">
@@ -11,10 +23,21 @@ const WebColors = (props) => {
                 </p>
                 <p><a href="https://github.com/dariusk/corpora/blob/master/data/colors/crayola.json">The colors.json file cvan be found in this excellent repo</a></p>
             </div>
+            <div className="picker">
+                <div className="picked">
+                {
+                    picked.length > 0 ?
+                    picked.map( (col,i) => 
+                    <Color key={i} hex={col.hex} col={col.color} onClick={remove} /> )
+                    :
+                    <p style={{color: 'white'}}>Pick a color to start your palette</p>
+                }
+                </div>
+            </div>
             <div className="colors">
             {
                 webColors.colors.map(
-                    (col, i) => <Color key={i} hex={col.hex} col={col.color} />    
+                    (col, i) => <Color key={i} hex={col.hex} col={col.color} onClick={pick} />    
                 )
             }
             </div>

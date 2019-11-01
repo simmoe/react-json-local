@@ -62,7 +62,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap:.2rem;
 }
-.colors div{
+.colors div, .color{
     height:2.4rem;
     color:#eee;
     font-size:.6rem;
@@ -71,4 +71,28 @@ main{
     display:grid;
     align-items:flex-end;
     padding:.2rem;
+}
+
+.picker{
+  position:sticky;
+  top:3rem;
+}
+.picked{
+  display:grid;
+  background-color:black;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding:1rem;
+}
+.picked .color{
+  height:100px;
+  animation: easeIn .4s ease;
+}
+
+@keyframes easeIn{
+  from{
+    width:0;
+  }
+  to{
+    width:98%;
+  }
 }
